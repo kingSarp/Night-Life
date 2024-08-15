@@ -11,7 +11,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function Index() {
   return (
     <SafeAreaView style={styles.safeArea}>
-      <ScrollView contentContainerStyle={styles.scrollview}>
+      <ScrollView contentContainerStyle={{ height: "100%" }}>
         <View style={styles.maincontainer}>
           <View style={styles.imageContainer1}>
             <Image
@@ -43,8 +43,8 @@ export default function Index() {
             </Text>
             <View style={styles.buttoncontainer}>
               <Button
-                title="next"
                 style={styles.button}
+                imageSource={require("../assets/icons/right-arrow.png")}
                 handlePress={() => router.push("/sign-in")}
 
               />
@@ -61,10 +61,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#F4F7FF",
     // backgroundColor: "black",
-  },
-  scrollview: {
-    flexGrow: 1,
-    // paddingVertical: 70,
   },
   maincontainer: {
     flexGrow: 1,
@@ -99,7 +95,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 50,
     borderTopLeftRadius: 50,
     padding: 30,
-    marginTop: 20,
+    marginTop: 20
   
 
 

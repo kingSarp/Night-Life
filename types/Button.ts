@@ -1,7 +1,10 @@
+import { ImageSourcePropType } from "react-native";
+
 export type ButtonProps = {
-    title: string;
-    style?: {};
-    handlePress: () => void;
-    // textStyles?: string;
-    // isLoading?: boolean;
+  style: object;
+  handlePress: () => void;
+  imageSource: ImageSourcePropType;
+  // textStyles?: string;
+  // isLoading?: boolean;
+//   imageSource: string;
 };
