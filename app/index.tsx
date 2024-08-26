@@ -60,7 +60,8 @@ const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: "#F4F7FF",
-    // backgroundColor: "black",
+    alignItems: 'center',
+
   },
   maincontainer: {
     flexGrow: 1,
